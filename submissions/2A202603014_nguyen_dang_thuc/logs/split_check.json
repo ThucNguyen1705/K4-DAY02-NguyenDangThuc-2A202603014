@@ -1,0 +1,20 @@
+{
+  "n": {
+    "train": 10501,
+    "val": 3501,
+    "test": 3507
+  },
+  "frac": {
+    "train": 0.5997487006682277,
+    "val": 0.19995430921240506,
+    "test": 0.2002969901193672
+  },
+  "overlap": {
+    "train∩val": 0,
+    "train∩test": 0,
+    "val∩test": 0
+  },
+  "union": 17509,
+  "missing": 0,
+  "warnings": []
+}

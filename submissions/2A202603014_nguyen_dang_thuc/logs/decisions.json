@@ -1,0 +1,39 @@
+{
+  "step1_backbone": {
+    "exp_id": "B02",
+    "backbone": "convnext_tiny",
+    "reason": "macro-F1 val cao nhất (0.9412) trong 5 backbone, 1 seed"
+  },
+  "step2_noise_std": 0.0037205331719145345,
+  "step2_combination": {
+    "members": [
+      "T02",
+      "T04"
+    ],
+    "cfg": {
+      "aug": "trivial",
+      "loss": "ls",
+      "label_smoothing": 0.1
+    },
+    "note": "các yếu tố đều có Δ > std nhiễu"
+  },
+  "step2_recipe": {
+    "exp_id": "T02",
+    "cfg": {
+      "aug": "trivial"
+    },
+    "backbone": "convnext_tiny",
+    "val_macro_f1": 0.948393773619887,
+    "delta_vs_T00": 0.007181627455327688,
+    "reason": "macro-F1 val cao nhất (0.9484) trong các cấu hình seed 0; Δ so với T00 = +0.0072, std nhiễu T00 = 0.0037 (vượt nhiễu)"
+  },
+  "step3_method": {
+    "method": "R160",
+    "desc": "độ phân giải kiểm tra 160 (resize 183 + crop 160)",
+    "val_macro_f1": 0.9545048386497371,
+    "delta_vs_I00": 0.006408210017816662,
+    "p95_b1_ms": 5.951188249844108,
+    "temperature_scaling": true,
+    "reason": "macro-F1 val cao nhất trong các cách suy luận một mô hình; Δ so với I00 = +0.0064 (std nhiễu seed 0.0037); p95 batch 1 = 6.0 ms. Sau đó áp temperature scaling khớp trên val."
+  }
+}

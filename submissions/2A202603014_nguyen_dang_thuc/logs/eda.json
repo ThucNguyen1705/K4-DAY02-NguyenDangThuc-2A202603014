@@ -1,0 +1,21 @@
+{
+  "eda": {
+    "max_min_ratio": 9.024777006937562,
+    "largest": "Negatives",
+    "smallest": "Rubber Vine",
+    "diff_vs_paper": {
+      "Chinee Apple": 1,
+      "Lantana": -1,
+      "Parkinsonia": 0,
+      "Parthenium": 0,
+      "Prickly Acacia": 0,
+      "Rubber Vine": 0,
+      "Siam Weed": 0,
+      "Snake Weed": 0,
+      "Negatives": 0
+    }
+  },
+  "shapes": {
+    "(256, 256, 3)": 17509
+  }
+}

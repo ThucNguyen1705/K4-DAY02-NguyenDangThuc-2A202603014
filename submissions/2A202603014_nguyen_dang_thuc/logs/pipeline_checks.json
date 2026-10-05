@@ -1,0 +1,35 @@
+{
+  "initial_loss": [
+    {
+      "backbone": "resnet50",
+      "initial_loss": 2.186587691307068,
+      "expected": 2.1972245773362196,
+      "logit_std": 0.06515701301395893
+    },
+    {
+      "backbone": "convnext_tiny",
+      "initial_loss": 2.5219613313674927,
+      "expected": 2.1972245773362196,
+      "logit_std": 0.7750753164291382
+    },
+    {
+      "backbone": "deit_small_patch16_224",
+      "initial_loss": 2.276096820831299,
+      "expected": 2.1972245773362196,
+      "logit_std": 0.4239823967218399
+    }
+  ],
+  "overfit": {
+    "backbone": "resnet50",
+    "n_images": 32,
+    "steps": 100,
+    "loss_first": 2.187690258026123,
+    "loss_last": 0.0019833804108202457,
+    "train_acc_eval_mode": 1.0
+  },
+  "modes": {
+    "train_mode_ok": true,
+    "eval_mode_ok": true,
+    "frozen_bn_eval_ok": true
+  }
+}

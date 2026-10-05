@@ -1,0 +1,23 @@
+test_parse_overrides (test_own.TestCLI.test_parse_overrides) ... ok
+test_aggregate (test_own.TestInference.test_aggregate) ... ok
+test_fuse_bn (test_own.TestInference.test_fuse_bn) ... ok
+test_fuse_bn_act_efficientnet (test_own.TestInference.test_fuse_bn_act_efficientnet) ... ok
+test_temperature_recovers_T (test_own.TestInference.test_temperature_recovers_T) ... ok
+test_views (test_own.TestInference.test_views) ... ok
+test_class_weights (test_own.TestLosses.test_class_weights) ... ok
+test_cutmix_mixes_images_and_labels (test_own.TestLosses.test_cutmix_mixes_images_and_labels) ... ok
+test_focal_downweights_easy (test_own.TestLosses.test_focal_downweights_easy) ... ok
+test_focal_gamma0_equals_ce (test_own.TestLosses.test_focal_gamma0_equals_ce) ... ok
+test_ls_eps0_equals_ce_and_matches_torch (test_own.TestLosses.test_ls_eps0_equals_ce_and_matches_torch) ... ok
+test_mixup_and_mixed_loss (test_own.TestLosses.test_mixup_and_mixed_loss) ... ok
+test_counts (test_own.TestModel.test_counts) ... /usr/local/lib/python3.13/dist-packages/torch/jit/_script.py:1488: DeprecationWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+ok
+test_frozen_keeps_bn_eval (test_own.TestModel.test_frozen_keeps_bn_eval) ... ok
+test_param_groups (test_own.TestModel.test_param_groups) ... ok
+test_warmup_cosine (test_own.TestSchedule.test_warmup_cosine) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 1.581s
+
+OK

@@ -1,0 +1,6 @@
+........LỖI: /tmp/tmpmq2zyg8l/F01_seed0_test.csv: không khớp test CSV (/tmp/tmpmq2zyg8l/short.csv): thừa 590 ảnh, thiếu 0 ảnh
+..............................
+----------------------------------------------------------------------
+Ran 38 tests in 0.967s
+
+OK
